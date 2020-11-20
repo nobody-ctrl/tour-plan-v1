@@ -1,0 +1,16 @@
+.breadcrump
+    &__list
+        list-style: none
+        display: flex
+        padding: 18px 0px
+        margin: 0
+        &__item
+            font-size: 10px
+            line-height: 13px
+            &:not(:last-child)
+                &::after
+                    content: '/' 
+                    margin-right: 4px
+        &__link
+            text-decoration: none
+            color: inherit
