@@ -1,0 +1,1 @@
+$('.newsletter').parallax({imageSrc: '../img/newsletter-background.jpg', speed: 0.4});
