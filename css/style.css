@@ -935,6 +935,7 @@ template {
   }
   iframe {
     width: 100%;
+    border: none;
   }
   .map {
     width: 370px;
