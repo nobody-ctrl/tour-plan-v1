@@ -1,0 +1,76 @@
+.swiper
+    &-slide
+        &-reviews
+            margin-top: 45px
+            display: flex
+            justify-content: center
+    &-button
+        position: absolute
+        top: 50%
+        z-index: 99
+        cursor: pointer
+        width: 10px
+        height: 18px
+        margin-top: -45px
+        &-next
+            right: -151px
+        &-prev
+            left: -151px
+    &-container
+        &-wrapper
+            position: relative
+            max-width: 731px
+            margin: auto
+        &-reviews
+            max-width: 100%
+            position: static
+            overflow: hidden
+.container-title
+    color: #333333
+    font-size: 36px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 115px
+    margin-top: 40px
+.reviews
+    &__text
+        padding-top: 136px
+        padding-bottom: 30px
+        display: flex
+        align-items: center
+        margin: auto
+        max-width: 537px
+        color: #333333
+        font-size: 12px
+        font-weight: 400
+        line-height: 19.2px
+        font-family: Mulish
+    &__background
+        background-color: $light
+        width: 100%
+.profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 99
+    position: absolute
+    top: -45px
+    &__icon
+        width: 90px
+        height: 90px
+        border-radius: 50%
+        object-fit: cover
+        margin-bottom: 9px
+    &__name
+        margin-bottom: 10px
+        color: $primary
+        font-family: Mulish
+        font-size: 12px
+        font-weight: bold
+    &__text
+        font-family: Mulish
+        font-size: 10px
+        font-weight: 400
+    &__stars
+        margin-bottom: 4px
