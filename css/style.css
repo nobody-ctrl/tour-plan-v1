@@ -995,6 +995,78 @@ template {
   margin-bottom: 4px;
 }
 
+.activities__title {
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.activities__photos {
+  margin-top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.activities__photo {
+  width: 255px;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.activities__block-with-photo {
+  position: relative;
+}
+
+.activities__overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.activities__descr {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 143px;
+  left: 26px;
+  color: #ffffff;
+  display: block;
+  width: 160px;
+}
+
+.activities__button {
+  background: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 7px 22px;
+  position: absolute;
+  top: 201px;
+  left: 26px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1010,6 +1082,9 @@ template {
   }
   .swiper-slide__img {
     height: 100%;
+  }
+  .activities__photo {
+    width: 235px;
   }
 }
 
@@ -1073,6 +1148,12 @@ template {
   }
   .reviews__text {
     max-width: 420px;
+  }
+  .activities__photo {
+    width: 365px;
+  }
+  .activities__block-with-photo {
+    margin-bottom: 26px;
   }
 }
 
@@ -1190,6 +1271,13 @@ template {
   .reviews__text {
     max-width: 320px;
   }
+  .activities__photo {
+    width: 100%;
+  }
+  .activities__block-with-photo {
+    margin-bottom: 21px;
+    width: 48%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1240,6 +1328,23 @@ template {
   .reviews__text {
     max-width: 350px;
     width: 75%;
+  }
+  .activities__title {
+    margin-left: 7.5%;
+    margin-top: 0;
+  }
+  .activities__photo {
+    width: 100%;
+  }
+  .activities__block-with-photo {
+    margin-bottom: 20px;
+    width: 85%;
+  }
+  .activities__photos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
