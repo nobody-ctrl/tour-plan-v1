@@ -1156,6 +1156,8 @@ template {
   }
   .swiper-slide__img {
     height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .swiper-container {
     height: 350px;
@@ -1199,6 +1201,8 @@ template {
   }
   .swiper-slide__img {
     height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .swiper-container {
     height: 300px;
