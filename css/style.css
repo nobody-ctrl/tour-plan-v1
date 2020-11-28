@@ -780,6 +780,265 @@ template {
   background-color: black;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  width: 1110px;
+  margin: auto;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  -ms-grid-columns: 350px 350px 350px;
+      grid-template-columns: 350px 350px 350px;
+      grid-template-areas: "post-1 post-1 post-2" "post-3 post-4 post-5";
+  margin-bottom: 70px;
+}
+
+.post__radius {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.post__img {
+  border-radius: 8px 8px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.post__images {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.post__flash-offer {
+  padding: 8px 12px 7px 11px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  position: absolute;
+  top: 26px;
+  left: 0px;
+  z-index: 400;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.post__contacts-one {
+  margin-top: 23px;
+}
+
+.post__price-and-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+}
+
+.post-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: post-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.post-1__radius {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.post-1__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.post-1__block {
+  background-color: #0A223D;
+}
+
+.post-1__container {
+  padding: 47px 21px 30px 43px;
+  color: #ffffff;
+}
+
+.post-1__title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 6px;
+}
+
+.post-1__descr {
+  margin-top: 27px;
+  font-family: Mulish;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.post-1__contacts-one {
+  margin-top: 34px;
+}
+
+.post-1__contacts-two {
+  margin-top: 11px;
+}
+
+.post-1__price-and-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 37px;
+}
+
+.price-and-book__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 53px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-and-book__button {
+  padding: 11px 27px 10px 26px;
+  background: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.price-one {
+  font-family: Mulish;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.price-two {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.post-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: post-2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.post-2__container {
+  padding: 30px 21px 25px 32px;
+  color: #ffffff;
+}
+
+.post-2__images {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.post-2__flash-offer {
+  padding: 4px 9px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 400;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.post-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: post-3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.post-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: post-4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.post-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: post-5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.packages-title {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__image {
+  margin-right: 14px;
+}
+
+.contacts__text {
+  font-family: Mulish;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .newsletter {
   position: relative;
   padding-top: 98px;
@@ -1086,6 +1345,14 @@ template {
   .activities__photo {
     width: 235px;
   }
+  .grid-container {
+    -ms-grid-rows: 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px;
+    -ms-grid-columns: 350px 350px;
+        grid-template-columns: 350px 350px;
+        grid-template-areas: "post-1 post-1" "post-3 post-4" "post-2 post-5";
+    width: 730px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1278,6 +1545,52 @@ template {
     margin-bottom: 21px;
     width: 48%;
   }
+  .grid-container {
+    -ms-grid-rows: 500px 410px 410px;
+        grid-template-rows: 500px 410px 410px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "post-1 post-1" "post-3 post-4" "post-2 post-5";
+    max-width: 570px;
+    width: 92%;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .post-1 {
+    -ms-grid-columns: 3fr 5fr;
+        grid-template-columns: 3fr 5fr;
+  }
+  .post-1__descr {
+    font-size: 12.5px;
+  }
+  .post-2__container {
+    padding: 15px 18px 15px 25px;
+  }
+  .post-2__images {
+    height: 200px;
+  }
+  .price-and-book__button {
+    padding: 0px 17px 0px 17px;
+  }
+  .post-2 {
+    -ms-grid-rows: 2fr 3fr;
+        grid-template-rows: 2fr 3fr;
+  }
+  .post-3 {
+    -ms-grid-rows: 2fr 3fr;
+        grid-template-rows: 2fr 3fr;
+  }
+  .post-4 {
+    -ms-grid-rows: 2fr 3fr;
+        grid-template-rows: 2fr 3fr;
+  }
+  .post-5 {
+    -ms-grid-rows: 2fr 3fr;
+        grid-template-rows: 2fr 3fr;
+  }
+  .packages-title {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1345,6 +1658,81 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 40px;
+  }
+  .grid-container {
+    -ms-grid-rows: 500px 500px 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px 500px 500px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "post-1" "post-3" "post-4" "post-2" "post-5";
+    width: 75%;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .post-1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .post-1__descr {
+    display: none;
+  }
+  .post-1__star {
+    display: none;
+  }
+  .post-1__container {
+    padding: 25px 28px 0px 40px;
+  }
+  .post-1__radius {
+    border-radius: 0px 0px 8px 8px;
+  }
+  .post-1__img {
+    border-radius: 8px 8px 0px 0px;
+  }
+  .post-1__price-and-book {
+    margin-top: 24px;
+  }
+  .post-1__contacts-one {
+    margin-top: 23px;
+  }
+  .post-2__container {
+    padding: 25px 28px 0px 40px;
+  }
+  .post-2__images {
+    height: 250px;
+  }
+  .post-2__flash-offer {
+    padding: 0;
+    padding: 8px 12px 7px 11px;
+    color: #ffffff;
+    background-color: #EC1F46;
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    z-index: 400;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .post-2 {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .post-3 {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .post-4 {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .post-5 {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .post__images {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

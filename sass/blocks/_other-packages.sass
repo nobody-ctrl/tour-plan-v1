@@ -1,0 +1,155 @@
+.grid-container
+    display: grid
+    column-gap: 30px
+    row-gap: 30px
+    width: 1110px
+    margin: auto
+    grid-template-rows: 500px 500px
+    grid-template-columns: 350px 350px 350px
+    grid-template-areas: "post-1 post-1 post-2" "post-3 post-4 post-5"
+    margin-bottom: 70px
+.post
+    &__radius
+        border-radius: 0px 0px 8px 8px
+    &__img
+        border-radius: 8px 8px 0px 0px
+        object-fit: cover
+        height: 100%
+        width: 100%
+    &__images
+        height: 500px
+        width: 100%
+        position: relative
+    &__flash-offer
+        padding: 8px 12px 7px 11px
+        color: $light
+        background-color: $primary
+        position: absolute
+        top: 26px
+        left: 0px
+        z-index: 400
+        border-radius: 0px 4px 4px 0px
+    &__contacts
+        &-one
+            margin-top: 23px
+    &__price-and-book
+        display: flex
+        justify-content: space-between
+        margin-top: 24px
+.post-1
+    grid-area: post-1
+    display: grid
+    grid-template-columns: 1fr 1fr
+    &__radius
+        border-radius: 0px 8px 8px 0px
+    &__img
+        object-fit: cover
+        height: 100%
+        width: 100%
+        border-radius: 8px 0px 0px 8px
+    &__block
+        background-color: $dark
+    &__container
+        padding: 47px 21px 30px 43px
+        color: $light
+    &__title
+        font-family: Mulish
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin-top: 6px
+    &__descr
+        margin-top: 27px
+        font-family: Mulish
+        font-size: 14px
+        line-height: 160.6%
+    &__contacts
+        &-one
+            margin-top: 34px
+        &-two
+            margin-top: 11px
+    &__price-and-book
+        display: flex
+        justify-content: space-between
+        margin-top: 37px
+.price-and-book
+    &__price
+        display: flex
+        flex-direction: column
+        height: 53px
+        justify-content: space-between
+    &__button
+        padding: 11px 27px 10px 26px
+        background: $primary
+        border-radius: 4px
+        border: none
+        color: $light
+        font-size: 14px
+        line-height: 19px
+        cursor: pointer
+.price
+    &-one
+        font-family: Mulish
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+    &-two
+        font-family: Mulish
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+.post-2      
+    grid-area: post-2
+    display: grid
+    grid-template-rows: 1fr 1fr
+    &__container
+        padding: 30px 21px 25px 32px
+        color: $light
+    &__images
+        width: 100%
+        height: 250px
+        position: relative
+    &__flash-offer
+        padding: 4px 9px
+        color: $light
+        background-color: $primary
+        position: absolute
+        top: 30px
+        left: 0px
+        z-index: 400
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+.post-3
+    grid-area: post-3
+    display: grid
+    grid-template-rows: 1fr 1fr
+.post-4       
+    grid-area: post-4
+    display: grid
+    grid-template-rows: 1fr 1fr
+.post-5
+    grid-area: post-5
+    display: grid
+    grid-template-rows: 1fr 1fr
+.packages
+    &-title
+        margin-top: 40px
+        margin-bottom: 65px
+        font-family: Mulish
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+.contacts
+    display: flex
+    align-items: center
+    &__image
+        margin-right: 14px
+    &__text
+        font-family: Mulish
+        font-size: 12px
+        line-height: 15px
+
