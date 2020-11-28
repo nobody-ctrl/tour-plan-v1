@@ -1665,7 +1665,7 @@ template {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "post-1" "post-3" "post-4" "post-2" "post-5";
-    width: 75%;
+    width: 86%;
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }
