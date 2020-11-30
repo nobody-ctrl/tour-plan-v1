@@ -1,0 +1,106 @@
+.footer
+    background-color: $dark
+    color: $light
+    padding-top: 108px
+    padding-bottom: 46px
+    font-family: Mulish
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(4, minmax(min-content, 1fr))
+        grid-gap: 10px
+        grid-auto-rows: minmax(40px, min-content)
+    &__logo
+        width: 166px
+        grid-row: 1 / 3
+    &__categories
+        grid-row: 1 / 4
+    &__social
+        &-network
+            grid-row: 2 / 4
+            grid-column: 3 / 5
+            display: flex
+            align-items: start
+        &-links
+            display: flex
+            align-items: center
+            min-width: 83px
+            justify-content: space-between
+    &__contact-details
+        grid-column: 1 / 3
+    &__ul
+        padding: 0
+        list-style: none
+    &__title
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin: 0
+        margin-bottom: 16px
+        text-transform: uppercase
+        &--inline
+            margin: 0 43px 0 0
+    &__item
+        font-size: 14px
+        line-height: 160%
+        color: $footer-text-color
+        display: flex
+        align-items: flex-start
+        &--mb2
+            margin-bottom: 22px
+    &__icon
+        margin-right: 20px
+        &-wrapper
+            min-width: 40px
+    &__link
+        text-decoration: none
+        color: $footer-text-color
+    &__text
+        color: $footer-text-color
+        margin-bottom: 20px
+        margin-top: 34px
+    &__contacts-form
+        grid-column: span 2
+    &__input
+        background-color: $light
+        border-radius: 4px
+        width: 255px
+        padding: 18px 23px
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
+        border: none
+        margin-bottom: 15px
+        flex-basis: 48%
+        margin-top: 18px
+    &__message
+        background-color: $light
+        border-radius: 4px
+        padding: 18px 23px
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
+        border: none
+        flex-basis: 100%
+        height: 123px
+        margin-bottom: 22px
+    &__button
+        background: $primary
+        border-radius: 4px
+        border: none
+        padding: 18px 65px
+        font-family: Mulish
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $light
+    &__info
+        font-family: Mulish
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $footer-info
+    &__form
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
