@@ -74,6 +74,30 @@
             width: 365px
         &__block-with-photo
             margin-bottom: 26px
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+        &__social-network
+            grid-row: 1 / 2
+            grid-column: span 4
+            align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__additional
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__contact-details
+            grid-row: 3
+            grid-column: span 5
+        &__contacts-form
+            grid-row: 4
+            grid-column: span 5
 @media (max-width: 768px)
     .container
         max-width: 570px
@@ -190,6 +214,13 @@
         grid-template-rows: 2fr 3fr
     .packages-title
         margin-top: 10px
+    .footer
+        &-wrapper
+            column-gap: 0px
+        &__contact-details
+            grid-column: span 6
+        &__contacts-form
+            grid-column: span 6
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -291,3 +322,38 @@
     .post
         &__images
             height: 250px
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(7, min-content)
+            row-gap: 30px
+        &__logo
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+        &__social-network
+            grid-column: 1 / 2
+            grid-row: 2 / 3
+            flex-direction: column
+            min-height: 67px
+            justify-content: space-between
+        &__categories
+            grid-row: 5 / 6
+            grid-column: 1 / 2
+        &__additional
+            grid-row: 4 / 5
+            grid-column: 1 / 2
+        &__legal
+            grid-row: 3 / 4
+            grid-column: 1 / 2
+        &__contact-details
+            grid-column: 1 / 2
+            grid-row: 6 / 7
+        &__contacts-form
+            grid-column: 1 / 2
+            grid-row: 7 / 8
+        &__input
+            flex-basis: 100%
+            margin-top: 15px
+            margin-bottom: 0
+        &__message
+            margin-top: 15px
