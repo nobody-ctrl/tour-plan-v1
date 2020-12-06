@@ -50,7 +50,9 @@
     &__block
         background-color: $dark
     &__container
-        padding: 47px 21px 30px 43px
+        max-height: 495px
+        overflow-y: auto
+        padding: 47px 21px 23px 43px
         color: $light
     &__title
         font-family: Mulish
@@ -66,7 +68,7 @@
         line-height: 160.6%
     &__contacts
         &-one
-            margin-top: 34px
+            margin-top: 50px
         &-two
             margin-top: 11px
     &__price-and-book
@@ -80,6 +82,7 @@
         height: 53px
         justify-content: space-between
     &__button
+        margin-top: 19px
         padding: 11px 27px 10px 26px
         background: $primary
         border-radius: 4px
@@ -104,6 +107,9 @@
     display: grid
     grid-template-rows: 1fr 1fr
     &__container
+        max-width: 350px
+        max-height: 250px
+        overflow-y: auto
         padding: 30px 21px 25px 32px
         color: $light
     &__images
