@@ -2232,5 +2232,17 @@ template {
     -ms-grid-column-align: start;
         justify-self: start;
   }
+  .navbar-menu__item {
+    margin-bottom: 33px;
+  }
+  .navbar__search {
+    min-width: 250px;
+  }
+  .navbar__search--mobile_visible {
+    width: 250px;
+  }
+  .search__input {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
