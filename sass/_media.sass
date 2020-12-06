@@ -75,6 +75,7 @@
         &__block-with-photo
             margin-bottom: 26px
     .footer
+        padding-bottom: 33px
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
             grid-gap: 40px
@@ -98,6 +99,12 @@
         &__contacts-form
             grid-row: 4
             grid-column: span 5
+        &__disclaimer-and-others
+            grid-column: 1/3
+            margin-top: 56px
+        &__social-icons
+            grid-column: 5/7
+            margin-top: 56px
 @media (max-width: 768px)
     .container
         max-width: 570px
@@ -362,6 +369,7 @@
         &__images
             height: 250px
     .footer
+        padding-bottom: 21px
         &-wrapper
             grid-template-columns: 1fr
             grid-template-rows: repeat(7, min-content)
@@ -396,3 +404,19 @@
             margin-bottom: 0
         &__message
             margin-top: 15px
+        &__disclaimer-and-others
+            grid-column: 1/2
+            grid-row: 8 / 9
+            width: 90%
+            margin: 0
+            justify-self: center
+            align-self: end
+            font-size: 12px
+            line-height: 15px
+            font-family: Mulish
+        &__social-icons
+            grid-column: 1/2
+            grid-row: 9 / 10
+            margin-top: 0
+            align-self: start
+            justify-self: start

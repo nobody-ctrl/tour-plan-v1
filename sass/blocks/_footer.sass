@@ -2,8 +2,31 @@
     background-color: $dark
     color: $light
     padding-top: 108px
-    padding-bottom: 46px
+    padding-bottom: 45px
     font-family: Mulish
+    &__social-icons
+        grid-column: 4
+        grid-row: 5/6
+        justify-self: end
+        align-self: center
+        width: 136px
+        height: 22px
+        margin-top: 100px
+    &__disclaimer-and-others
+        height: 15px
+        width: 283px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-family: Mulish
+        font-size: 12px
+        line-height: 15px
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        color: $light
+        grid-column: 1/5
+        grid-row: 5/6
+        margin: auto
+        margin-top: 100px
     &-wrapper
         display: grid
         grid-template-columns: repeat(4, minmax(min-content, 1fr))
