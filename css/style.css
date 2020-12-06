@@ -2174,6 +2174,8 @@ template {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .footer__contact-details {
     -ms-grid-column: 1;
@@ -2236,7 +2238,7 @@ template {
     margin-bottom: 33px;
   }
   .navbar__search {
-    min-width: 250px;
+    min-width: 150px;
   }
   .navbar__search--mobile_visible {
     width: 250px;
