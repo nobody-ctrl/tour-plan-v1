@@ -111,7 +111,7 @@
                         Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
                     </p>
                 </div>
-                <div class="rating hotel-info__rating">
+                <div data-toggle="modal" class="rating hotel-info__rating">
                     <span class="rating__text">User Rattings</span>
                     <span class="rating__counter">4.5/5</span>
                 </div>
@@ -175,7 +175,7 @@
                             </a>
                         </div>
                         <!-- /.call-center -->
-                        <button class="button booking__button">
+                        <button data-toggle="modal" class="button booking__button">
                             View Other Options
                         </button>
                     </div>
@@ -642,10 +642,10 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contacts-form">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea placeholder="Message" cols="30" rows="10" class="footer__message"></textarea>
+                    <form action="send.php" method="post" class="footer__form">
+                        <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*">
+                        <input type="text" class="input footer__input" name="phone" placeholder="Phone Number*">
+                        <textarea placeholder="Message" name="message" class="footer__message"></textarea>
                         <button class="button footer__button" type="Submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -664,6 +664,29 @@
         </div>
         <!-- /.container -->
     </footer>
+
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon: close">
+            </a>
+            <h3 class="modal__title">Booking</h3>
+            <form action="send.php" method="post" class="modal__form">
+               <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*">
+               <input type="text" class="input modal__input" name="phone" placeholder="Phone Number*">
+               <textarea placeholder="Message" name="message" class="modal__message"></textarea>
+               <button class="button modal__button" type="Submit">Send</button>
+               <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script>

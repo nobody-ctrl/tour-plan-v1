@@ -105,6 +105,9 @@
         &__social-icons
             grid-column: 5/7
             margin-top: 56px
+    .modal
+        &__dialog
+            padding: 33px 45px
 @media (max-width: 768px)
     .container
         max-width: 570px
@@ -267,6 +270,12 @@
             grid-column: span 6
         &__contacts-form
             grid-column: span 6
+    .modal
+        &__info
+            display: block
+        &__dialog
+            max-width: 500px
+            width: 100%
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -433,3 +442,9 @@
     .search
         &__input
             width: 200px
+    .modal
+        &__info
+            display: block
+        &__dialog
+            max-width: 400px
+            width: 100%

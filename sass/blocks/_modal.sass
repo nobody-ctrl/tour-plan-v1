@@ -1,0 +1,82 @@
+.modal
+    &__overlay
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 143, 223, 0.39)
+        z-index: 2100
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__dialog
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        max-width: 478px
+        padding: 33px 88px
+        background-color: $dark
+        color: $light
+        z-index: 2101
+        border-radius: 8px
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__close
+        position: absolute
+        right: 18px
+        top: 17px
+        text-decoration: none
+        cursor: pointer
+    &__input
+        width: 100%
+        background-color: $light
+        border-radius: 4px
+        padding: 18px 23px
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
+        border: none
+        margin-bottom: 15px
+    &__message
+        background-color: $light
+        border-radius: 4px
+        padding: 18px 23px
+        font-size: 12px
+        line-height: 15px
+        color: $footer-text-color
+        border: none
+        width: 100%
+        min-height: 123px
+        margin-bottom: 15px
+    &__button
+        background: $primary
+        border-radius: 4px
+        border: none
+        padding: 18px 65px
+        font-family: Mulish
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        cursor: pointer
+    &__info
+        font-family: Mulish
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $footer-info
+    &__title
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        text-transform: uppercase
+        text-align: center

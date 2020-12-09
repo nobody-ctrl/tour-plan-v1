@@ -1586,6 +1586,110 @@ template {
       justify-self: end;
 }
 
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 2100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  color: #ffffff;
+  z-index: 2101;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__input {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  border: none;
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  background: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  padding: 18px 65px;
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal__info {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1738,6 +1842,9 @@ template {
     -ms-grid-column-span: 2;
     grid-column: 5/7;
     margin-top: 56px;
+  }
+  .modal__dialog {
+    padding: 33px 45px;
   }
 }
 
@@ -1972,6 +2079,13 @@ template {
   }
   .footer__contacts-form {
     grid-column: span 6;
+  }
+  .modal__info {
+    display: block;
+  }
+  .modal__dialog {
+    max-width: 500px;
+    width: 100%;
   }
 }
 
@@ -2245,6 +2359,13 @@ template {
   }
   .search__input {
     width: 200px;
+  }
+  .modal__info {
+    display: block;
+  }
+  .modal__dialog {
+    max-width: 400px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
