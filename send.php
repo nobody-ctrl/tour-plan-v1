@@ -5,10 +5,26 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
-$email = $_POST['email'];
+if(isset($_POST['name'])){
+    $name = $_POST['name'];
+}else{
+    $name="User have not given his name"
+}
+if(isset($_POST['phone'])){
+    $phone = $_POST['phone'];
+}else{
+    $phone="User have not given his phone"
+}
+if(isset($_POST['message'])){
+    $message = $_POST['message'];
+}else{
+    $message="User have not given the message"
+}
+if(isset($_POST['email'])){
+    $email = $_POST['email'];
+}else{
+    $email="User have not given his email"
+}
 
 // Формирование самого письма
 $title = "Заголовок письма";
