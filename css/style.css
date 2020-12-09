@@ -2366,6 +2366,7 @@ template {
   .modal__dialog {
     max-width: 400px;
     width: 85%;
+    padding: 33px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
