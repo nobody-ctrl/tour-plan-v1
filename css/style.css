@@ -1523,9 +1523,9 @@ template {
   border-radius: 4px;
   width: 255px;
   padding: 18px 23px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: black;
   border: none;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
@@ -1537,9 +1537,9 @@ template {
   background-color: #ffffff;
   border-radius: 4px;
   padding: 18px 23px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: black;
   border: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1641,9 +1641,9 @@ template {
   background-color: #ffffff;
   border-radius: 4px;
   padding: 18px 23px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: black;
   border: none;
   margin-bottom: 15px;
 }
@@ -1652,9 +1652,9 @@ template {
   background-color: #ffffff;
   border-radius: 4px;
   padding: 18px 23px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: black;
   border: none;
   width: 100%;
   min-height: 123px;

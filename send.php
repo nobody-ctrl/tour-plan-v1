@@ -8,14 +8,16 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Заголовок письма";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message<br><br>
+<b>Подписка:</b><br>$email
 ";
 
 // Настройки PHPMailer
@@ -24,7 +26,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -54,4 +56,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
