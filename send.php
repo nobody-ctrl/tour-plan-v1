@@ -8,22 +8,22 @@ require 'phpmailer/Exception.php';
 if(isset($_POST['name'])){
     $name = $_POST['name'];
 }else{
-    $name="User have not given his name"
+    $name="User have not given his name";
 }
 if(isset($_POST['phone'])){
     $phone = $_POST['phone'];
 }else{
-    $phone="User have not given his phone"
+    $phone="User have not given his phone";
 }
 if(isset($_POST['message'])){
     $message = $_POST['message'];
 }else{
-    $message="User have not given the message"
+    $message="User have not given the message";
 }
 if(isset($_POST['email'])){
     $email = $_POST['email'];
 }else{
-    $email="User have not given his email"
+    $email="User have not given his email";
 }
 
 // Формирование самого письма
