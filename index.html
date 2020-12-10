@@ -387,7 +387,7 @@
             <!-- /.newsletter__text -->
             <div class="newsletter__search">
                 <form action="send.php" method="post" class="newsletter__form form">
-                    <input type="text" class="form__input" name="email" placeholder="Your email address">
+                    <input type="email" class="form__input" name="email" placeholder="Your email address">
                     <button class="form__button">
                         Send
                     </button>
@@ -642,9 +642,15 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contacts-form">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="send.php" method="post" class="footer__form">
-                        <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" name="phone" placeholder="Phone Number*">
+                    <form action="send.php" method="post" class="footer__form form-validation">
+                        <div class="footer__input-group">
+                            <input type="text" class="input footer__input" name="name" placeholder="Your Full Name*" required>
+                        </div>
+                        <!-- /.footer__input-group -->
+                        <div class="footer__input-group">
+                            <input type="tel" class="input footer__input form-phone" name="phone" placeholder="Phone Number*" required>
+                        </div>
+                        <!-- /.footer__input-group -->
                         <textarea placeholder="Message" name="message" class="footer__message"></textarea>
                         <button class="button footer__button" type="Submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
@@ -675,10 +681,10 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title">Booking</h3>
-            <form action="send.php" method="post" class="modal__form">
-               <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*">
-               <input type="text" class="input modal__input" name="phone" placeholder="Phone Number*">
-               <input type="text" class="input modal__input" name="email" placeholder="Email*">
+            <form action="send.php" method="post" class="modal__form form-validation">
+               <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required>
+               <input type="tel" class="input modal__input form-phone" name="phone" placeholder="Phone Number*" required>
+               <input type="email" class="input modal__input" name="email" placeholder="Email*" required>
                <textarea placeholder="Message" name="message" class="modal__message"></textarea>
                <button class="button modal__button" type="Submit">Send</button>
                <span class="modal__info">* Required Fields</span>
@@ -694,6 +700,8 @@
         $(".newsletter").parallax({imageSrc: "./img/newsletter-background.jpg", speed: 0.4})
     </script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

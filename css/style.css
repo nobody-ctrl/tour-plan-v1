@@ -22,6 +22,12 @@ iframe {
   border: none;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+  display: inline;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1527,6 +1533,9 @@ template {
   line-height: 15px;
   color: black;
   border: none;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1645,7 +1654,7 @@ template {
   line-height: 15px;
   color: black;
   border: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
@@ -1658,7 +1667,7 @@ template {
   border: none;
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__button {
@@ -1672,6 +1681,7 @@ template {
   line-height: 15px;
   color: #ffffff;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1842,6 +1852,9 @@ template {
     -ms-grid-column-span: 2;
     grid-column: 5/7;
     margin-top: 56px;
+  }
+  .footer__input {
+    width: 100%;
   }
   .modal__dialog {
     padding: 33px 45px;
