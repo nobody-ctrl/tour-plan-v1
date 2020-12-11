@@ -73,12 +73,15 @@
         &--mb2
             margin-bottom: 22px
     &__icon
-        margin-right: 20px
         &-wrapper
             min-width: 40px
+            display: flex
+            justify-content: center
     &__link
         text-decoration: none
         color: $footer-text-color
+        &-for-logo
+            display: block
     &__text
         color: $footer-text-color
         margin-bottom: 20px
@@ -122,6 +125,7 @@
         font-size: 12px
         line-height: 15px
         color: $light
+        cursor: pointer
     &__info
         font-family: Mulish
         font-weight: bold
@@ -135,3 +139,12 @@
         justify-content: space-between
     &__legal
         justify-self: end
+    &__disclaimer
+        text-decoration: none
+        color: $light
+    &__conditions
+        text-decoration: none
+        color: $light
+    &__policy
+        text-decoration: none
+        color: $light
