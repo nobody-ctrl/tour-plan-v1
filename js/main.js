@@ -74,5 +74,21 @@ $(document).ready(function (){
     });
   });
   $('.form-phone').mask('+7(000) 000-00-00');
+  $('.form-validation-another').each( function() {
+    $(this).validate({
+      errorClass: "another-invalid",
+      errorPlacement: function(error, element) {
+        if ($(".another-invalid").length == 1){
+          error.insertAfter(".newsletter__form");
+        }
+      },
+      messages: {
+        email: {
+          required: "We need email adress to contact you!",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
   AOS.init();
 });
