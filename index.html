@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css"> 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2a584bc3-5ace-43fc-9cf4-385e94674e27"></script>
-    <script src="js/mapbasics.js"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2a584bc3-5ace-43fc-9cf4-385e94674e27"></script> -->
 </head>
 <body>
     <header class="navbar navbar--mobile_fixed">
@@ -181,9 +180,10 @@
                         </button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map" id="map">
-                    </div>
-                    <!-- /.map -->
+                    <div class="ymap-container">
+                        <div class="loader loader-default"></div>
+                        <div id="map-yandex"></div>
+                    </div><!-- .ymap-container -->
                 </div>
                 <!-- /.hotel-right -->
             </div>
@@ -705,5 +705,6 @@
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mapbasics.js"></script>
 </body>
 </html>
