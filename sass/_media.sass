@@ -20,6 +20,9 @@
         grid-template-columns: 350px 350px
         grid-template-areas: "post-1 post-1" "post-3 post-4" "post-2 post-5"
         width: 730px
+    .footer
+        &__input
+            width: 100%
 @media (max-width: 992px)
     .container
         max-width: 760px
@@ -146,7 +149,7 @@
         &-menu
             flex-direction: column
             &__item
-                margin-bottom: 20px
+                margin-bottom: 30px
                 &--mobile
                     &_visible
                         display: block
@@ -156,11 +159,13 @@
             width: 16px
             height: 11px
             align-items: center
-            justify-content: space-between
             flex-direction: column
+            justify-content: space-between
             border: none
             background-color: #fff
             cursor: pointer
+            margin-top: 5px
+            margin-right: 10px
             &__line
                 width: 16px
                 height: 1px
@@ -331,8 +336,12 @@
         grid-template-rows: 500px 500px 500px 500px 500px
         grid-template-columns: 1fr
         grid-template-areas: "post-1" "post-3" "post-4" "post-2" "post-5"
-        width: 86%
+        width: 90%
+        max-width: 400px
         column-gap: 10px
+    .packages
+        &-title
+            width: 100%
     .post-1
         grid-template-columns: 1fr
         grid-template-rows: 1fr 1fr
@@ -435,12 +444,13 @@
     .navbar
         &-menu
             &__item
-                margin-bottom: 33px
+                margin-bottom: 22px
         &__search
             min-width: 150px
             &--mobile
                 &_visible
                     width: 250px
+                    margin-top: -10px
     .search
         &__input
             width: 200px
@@ -451,3 +461,12 @@
             max-width: 400px
             width: 85%
             padding: 33px 20px
+@media (max-height: 550px)
+    .modal
+        &__dialog
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translate(-50%, 0%)
+            overflow: visible
+            
