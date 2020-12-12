@@ -42,16 +42,16 @@ $(document).ready(function (){
   function openModal(){
     var modalOverlay=$('.modal__overlay');
     var modalDialog=$('.modal__dialog');
-    modalOverlay.addClass('modal__overlay--visible')
-    modalDialog.addClass('modal__dialog--visible')
+    modalOverlay.addClass('modal__overlay--visible');
+    modalDialog.addClass('modal__dialog--visible');
     $('body').addClass('no-scrolling-body-modal');
   }
   $(document).keyup(function(e) {
     if (e.key === "Escape") {
       var modalOverlay=$('.modal__overlay');
       var modalDialog=$('.modal__dialog');
-      modalOverlay.removeClass('modal__overlay--visible')
-      modalDialog.removeClass('modal__dialog--visible')
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
       $('body').removeClass('no-scrolling-body-modal');
     }
   });
@@ -59,8 +59,8 @@ $(document).ready(function (){
     event.preventDefault()
     var modalOverlay=$('.modal__overlay');
     var modalDialog=$('.modal__dialog');
-    modalOverlay.removeClass('modal__overlay--visible')
-    modalDialog.removeClass('modal__dialog--visible')
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
     $('body').removeClass('no-scrolling-body-modal');
   }
   $('.form-validation').each( function() {

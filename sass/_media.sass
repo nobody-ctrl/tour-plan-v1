@@ -470,6 +470,30 @@
         &__title
             font-size: 25px
             margin-top: 20px
+@media (max-width: 400px)
+    .button-and-info-wrapper
+        display: flex
+        flex-direction: column
+    .modal
+        &__button
+            width: 100%
+        &__info
+            margin-top: 15px
+            align-self: start
+    .user-avatar
+        width: 40px
+        height: 40px
+    .navbar
+        &-menu
+            margin-top: -23px
+            &__item
+                margin-top: 0
+                margin-bottom: 0
+            &__link-item
+                margin-bottom: 16.5px
+        &__search
+            margin-top: 30px
+            margin-bottom: 35px
 @media (max-height: 550px)
     .modal
         &__dialog
