@@ -27,6 +27,11 @@ $(document).ready(function (){
   menuButton.addEventListener('click', function(){
     console.log("Button is clicked!")
     document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+    if ($('.no-scrolling-body').length == 1){
+      $('body').removeClass('no-scrolling-body');
+    }else{
+      $('body').addClass('no-scrolling-body');
+    }
   })
 
   var modalButton = $('[data-toggle=modal]');
@@ -39,6 +44,7 @@ $(document).ready(function (){
     var modalDialog=$('.modal__dialog');
     modalOverlay.addClass('modal__overlay--visible')
     modalDialog.addClass('modal__dialog--visible')
+    $('body').addClass('no-scrolling-body-modal');
   }
   $(document).keyup(function(e) {
     if (e.key === "Escape") {
@@ -46,6 +52,7 @@ $(document).ready(function (){
       var modalDialog=$('.modal__dialog');
       modalOverlay.removeClass('modal__overlay--visible')
       modalDialog.removeClass('modal__dialog--visible')
+      $('body').removeClass('no-scrolling-body-modal');
     }
   });
   function closeModal(event){
@@ -54,6 +61,7 @@ $(document).ready(function (){
     var modalDialog=$('.modal__dialog');
     modalOverlay.removeClass('modal__overlay--visible')
     modalDialog.removeClass('modal__dialog--visible')
+    $('body').removeClass('no-scrolling-body-modal');
   }
   $('.form-validation').each( function() {
     $(this).validate({
