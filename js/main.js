@@ -65,6 +65,11 @@ $(document).ready(function (){
   }
   $('.form-validation').each( function() {
     $(this).validate({
+      rules: {
+        phone: {
+          rangelength:[17,17]
+        },
+      },
       errorClass: "invalid",
       messages: {
         name: {
@@ -77,6 +82,7 @@ $(document).ready(function (){
         },
         phone: {
           required: "Your phone is required",
+          rangelength: "Enter at least 10 numbers!",
         },
       },
     });
@@ -84,6 +90,11 @@ $(document).ready(function (){
   $('.form-phone').mask('+7(000) 000-00-00');
   $('.form-validation-another').each( function() {
     $(this).validate({
+      rules: {
+        phone: {
+          rangelength:[17,17]
+        },
+      },
       errorClass: "another-invalid",
       errorPlacement: function(error, element) {
         if ($(".another-invalid").length == 1){

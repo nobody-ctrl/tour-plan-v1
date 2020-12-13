@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css"> 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2a584bc3-5ace-43fc-9cf4-385e94674e27"></script>
-    <script src="js/mapbasics.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="navbar navbar--mobile_fixed">
@@ -58,13 +59,13 @@
                             </button>
                         </form>        
                     </li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
-                    <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">All Deals</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">Hotels</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">Activities</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">Events</a></li>
+                    <li class="navbar-menu__item navbar-menu__link-item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
                 </ul>
             </div>
             <!-- /.navbar-menu -->
@@ -87,7 +88,6 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- /.breadcrump -->
     <section class="container">
         <div class="hotel">
             <div class="hotel-info">
@@ -173,9 +173,9 @@
                 <div class="footer__social-network">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="#" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
-                        <a href="#" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-                        <a href="#" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram"></a>
+                        <a href="https://facebook.com" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
+                        <a href="https://youtube.com" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
+                        <a href="https://instagram.com" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram"></a>
                     </div>
                 </div>
                 <!-- /.footer__social-network -->
@@ -260,12 +260,16 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title">Booking</h3>
-            <form action="send.php" method="post" class="modal__form">
-               <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*">
-               <input type="text" class="input modal__input" name="phone" placeholder="Phone Number*">
+            <form action="send.php" method="post" class="modal__form form-validation">
+               <input type="text" class="input modal__input" name="name" placeholder="Your Full Name*" required>
+               <input type="tel" class="input modal__input form-phone" minlength="10" name="phone" placeholder="Phone Number*" required>
+               <input type="email" class="input modal__input" name="email" placeholder="Email*" required>
                <textarea placeholder="Message" name="message" class="modal__message"></textarea>
-               <button class="button modal__button" type="Submit">Send</button>
-               <span class="modal__info">* Required Fields</span>
+               <div class="button-and-info-wrapper">
+                    <button class="button modal__button" type="Submit">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+               </div>
+               <!-- /.button-and-info-wrapper -->
             </form>
         </div>
         <!-- /.modal__dialog -->
@@ -278,6 +282,10 @@
         $(".newsletter").parallax({imageSrc: "./img/newsletter-background.jpg", speed: 0.4})
     </script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mapbasics.js"></script
 </body>
 </html>
